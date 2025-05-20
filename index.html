@@ -87,6 +87,17 @@
             position: relative;
             z-index: 10;
         }
+        #bg-video {
+    position: fixed;
+    top: 0;
+    left: 0;
+    min-width: 100%;
+    min-height: 100%;
+    object-fit: cover;
+    z-index: -100;
+    opacity: 0.2; /* adjust for visibility */
+    pointer-events: none; /* prevents interaction */
+}
 
         .logo {
             font-size: 1.5rem;
@@ -681,6 +692,10 @@
     </style>
 </head>
 <body>
+<video autoplay muted loop playsinline id="bg-video">
+    <source src="https://files.catbox.moe/hw4iba.mp4" type="video/mp4">
+    Your browser does not support the video tag.
+</video>
     <!-- Cursor Trail -->
     <div class="cursor-trail"></div>
 
@@ -786,7 +801,7 @@
 
   <!-- Project 8 -->
             <div class="project" data-voice="Termi ">
-                <div class="project-image" style="background-image: url('https://files.catbox.moe/zy8lpi.jpg');"></div>
+                <div class="project-image" style="background-image: url('https://files.catbox.moe/wgws8f.jpg');"></div>
                 <div class="project-content">
                     <h3 class="project-title">REMOVE BACKGROUND</h3>
                     <p class="project-desc">advanced background removal by developer james </p>
